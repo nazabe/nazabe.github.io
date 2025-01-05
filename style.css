@@ -31,10 +31,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    background-color: transparent;
+    height: 100%; /* Mantiene la altura del contenedor */
+    width: 80%; /* El contenedor ocupará el 80% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
     color: rgb(255, 255, 255); /* Texto blanco */
-    font-size: 10vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    font-size: 5vw; /* Tamaño de fuente relativo al ancho de la pantalla */
 }
+
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -47,7 +51,7 @@ body {
 /* Estilos para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
     .contents {
-        font-size: 20vw; /* Tamaño de fuente aún mayor en móviles pequeños */
-        padding: 10px;
+        font-size: 12vw; /* Tamaño de fuente aún mayor en móviles pequeños */
+        padding: 15px;
     }
 }
