@@ -6,9 +6,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 100vh; /* 100% de la altura de la pantalla */
     font-weight: 900;
     font-size: large;
+    text-align: center; /* Asegura que el contenido esté centrado */
 }
 
 #container {
@@ -16,6 +17,9 @@ body {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 #container > * {
@@ -29,15 +33,13 @@ body {
     align-items: center;
     height: 100%;
     color: rgb(255, 255, 255); /* Texto blanco */
-    /* font-size: 2rem; */
     font-size: 10vw; /* Tamaño de fuente relativo al ancho de la pantalla */
 }
-
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     .contents {
-        font-size: 1.5rem;
+        font-size: 15vw; /* Tamaño de fuente mayor en pantallas pequeñas */
         padding: 15px;
     }
 }
@@ -45,7 +47,7 @@ body {
 /* Estilos para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
     .contents {
-        font-size: 1.2rem;
+        font-size: 20vw; /* Tamaño de fuente aún mayor en móviles pequeños */
         padding: 10px;
     }
 }
