@@ -29,5 +29,23 @@ body {
     align-items: center;
     height: 100%;
     color: rgb(255, 255, 255); /* Texto blanco */
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 10vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contents {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .contents {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 }
